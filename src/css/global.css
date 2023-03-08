@@ -11,6 +11,7 @@
 /* @import-glob 'utilities/*.css'; */
 @import 'compositions/grid.css';
 @import 'utilities/flow.css';
+@import 'utilities/page.css';
 @import 'utilities/region.css';
 @import 'utilities/wrapper.css';
 @import 'blocks/card.css';

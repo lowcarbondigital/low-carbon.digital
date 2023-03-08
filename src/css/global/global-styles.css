@@ -43,7 +43,7 @@ blockquote:not([class]) {
 h1,
 h2,
 h3 {
-  max-width: 20ch;
+  max-width: 24ch;
 }
 
 /* More generic elements */
@@ -88,16 +88,4 @@ main:focus {
 ::selection {
   background: var(--color-dark);
   color: var(--color-light);
-}
-
-/* Visually hide elements */
-
-.vh {
-  clip-path: inset(100%) !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
 }

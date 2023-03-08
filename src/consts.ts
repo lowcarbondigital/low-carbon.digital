@@ -1,2 +1,2 @@
 export const SITE_TITLE = 'Low-Carbon Digital';
-export const SITE_DESCRIPTION = 'A digital consultancy that makes stunning and sustainable websites for clients of all sizes.'
+export const SITE_DESCRIPTION = 'A digital consultancy that makes beautiful, sustainable websites for people and planet.'
