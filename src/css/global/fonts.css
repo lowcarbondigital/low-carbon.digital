@@ -10,7 +10,7 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/AtkinsonHyperlegibleRegularExtras.woff2') format('woff2');
+  src: url('/fonts/AtkinsonHyperlegibleRegularExtra.woff2') format('woff2');
   unicode-range: U+00A0-00FF, U+0100-017F;
 }
 
@@ -26,7 +26,7 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: italic;
   font-weight: 400;
-  src: url('/fonts/AtkinsonHyperlegibleItalicExtras.woff2') format('woff2');
+  src: url('/fonts/AtkinsonHyperlegibleItalicExtra.woff2') format('woff2');
   unicode-range: U+00A0-00FF, U+0100-017F;
 }
 
@@ -42,7 +42,7 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/AtkinsonHyperlegibleBoldExtras.woff2') format('woff2');
+  src: url('/fonts/AtkinsonHyperlegibleBoldExtra.woff2') format('woff2');
   unicode-range: U+00A0-00FF, U+0100-017F;
 }
 
@@ -58,6 +58,6 @@
   font-family: 'Atkinson Hyperlegible';
   font-style: italic;
   font-weight: 700;
-  src: url('/fonts/AtkinsonHyperlegibleBoldItalicExtras.woff2') format('woff2');
+  src: url('/fonts/AtkinsonHyperlegibleBoldItalicExtra.woff2') format('woff2');
   unicode-range: U+00A0-00FF, U+0100-017F;
 }
