@@ -1,15 +1,49 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
+import Logo from '../components/Logo.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main class="flow">
+			<div class="wrapper flow region">
+				<a class="logo" href="/">
+					<Logo />
+					<span class="vh">Low-Carbon Digital, Homepage</span>
+				</a>
+				<h1>What is this?</h1>
+				<p>A digital consultancy that makes <strong>beautiful</strong>, <strong>sustainable</strong> websites that work for <strong>people &amp; <span style="color: var(--color-primary);">planet</span></strong>.</p>
+				<p>A second line with some <a href="#">ruddy links</a>.</p>
+			</div>
+			<div class="wrapper">
+				<h2>Something else</h2>
+				<p>Blah blah.</p>
+			</div>
+			<div class="wrapper">
+				<ul class="grid" role="list" data-rows="masonry" data-layout="50-50">
+					<li class="card flow">
+						<h3>Modern CSS with Methodologies</h3>
+						<p>Instead of <a href="#">brute-forcing</a> your designs together with a CSS framework&hellip;</p>
+					</li>
+					<li class="card flow">
+						<h3>Modern CSS with Methodologies</h3>
+						<p>Instead of brute-forcing your designs together with a CSS framework&hellip;</p>
+					</li>
+					<li class="card flow">
+						<h3>Modern CSS with Methodologies</h3>
+						<p>Instead of brute-forcing your designs together with a CSS framework&hellip;</p>
+					</li>
+					<li class="card flow">
+						<h3>Modern CSS with Methodologies</h3>
+						<p>Instead of brute-forcing your designs together with a CSS framework&hellip;</p>
+					</li>
+				</ul>
+			</div>
+		</main>
 	</body>
 </html>
