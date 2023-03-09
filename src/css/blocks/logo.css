@@ -1,6 +1,5 @@
 .logo svg {
 	font-size: var(--size-step-4);
 	height: auto;
-	width: 100%;
-	max-width: 10ch;
+	width: clamp(5ch, 7ch, 10ch);
 }
