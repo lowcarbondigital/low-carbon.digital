@@ -15,7 +15,7 @@
 @import 'utilities/region.css';
 @import 'utilities/wrapper.css';
 @import 'blocks/card.css';
-@import 'blocks/carbonbadge.css';
+@import 'blocks/colophon.css';
 @import 'blocks/logo.css';
 
 @import 'tailwindcss/utilities';

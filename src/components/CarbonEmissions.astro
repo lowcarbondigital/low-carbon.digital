@@ -1,0 +1,29 @@
+---
+import puppeteer from 'puppeteer';
+import { co2 } from '@tgwf/co2';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+let totalTransferSize = 0;
+let emissions = 0;
+
+const browser = await puppeteer.launch();
+const page = await browser.newPage();
+await page.goto( canonicalURL.href );
+const perfEntries = JSON.parse(
+	await page.evaluate(() => JSON.stringify(performance.getEntries()))
+);
+perfEntries.forEach((entry) => {
+	if (typeof (entry.transferSize) === "number") {
+		totalTransferSize = totalTransferSize + entry.transferSize;
+	}
+});
+
+const co2Emission = new co2();
+const estimatedCO2 = co2Emission.perByte(totalTransferSize, true);
+emissions = estimatedCO2.toFixed(3);
+
+await browser.close();
+---
+
+{emissions}

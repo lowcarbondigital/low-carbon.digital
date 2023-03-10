@@ -1,0 +1,24 @@
+---
+import CarbonEmissions from '../components/CarbonEmissions.astro';
+
+const today = new Date();
+---
+
+<footer class="wrapper region flow colophon" role="contentinfo">
+	<p><small>This page loaded in <strong><span id="load-time">&hellip;</span> seconds</strong>, produced just <strong><CarbonEmissions />g of CO<sub>2</sub></strong>, and it is powered by <a target="_blank" href="https://www.thegreenwebfoundation.org/directory/">renewable energy</a>. Emissions are calculated using <a target="_blank" href="https://www.thegreenwebfoundation.org/co2-js/">CO2.js</a> and the <a target="_blank" href="https://sustainablewebdesign.org/calculating-digital-emissions/">Sustainable Web Design model</a>.</small></p>
+	
+	<p><small>&copy; {today.getFullYear()} <strong>low-carbon</strong>.digital. All rights reserved.</small></p>
+
+	<script>
+		window.addEventListener("load", (event) => {
+			const observer = new PerformanceObserver((list) => {
+				list.getEntries().forEach((entry) => {
+					const elem = document.getElementById("load-time");
+					const seconds = entry.duration / 1000;
+					elem.textContent = seconds.toFixed(2);
+				});
+			});
+			observer.observe({ entryTypes: ["navigation"] });
+		});
+	</script>
+</footer>

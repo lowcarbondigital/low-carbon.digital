@@ -54,6 +54,11 @@ svg {
   flex: none;
 }
 
+sub {
+  font-size: 0.6rem;
+  vertical-align: -20%;
+}
+
 [role='list'] {
   padding: 0;
 }
