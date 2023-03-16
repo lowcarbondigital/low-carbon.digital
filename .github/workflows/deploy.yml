@@ -19,4 +19,4 @@ jobs:
           key: ${{ secrets.SSHKEY }}
           script: |
             cd ${{ secrets.REPO_PATH }}
-            git pull origin master
+            git pull origin main
