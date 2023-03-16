@@ -24,3 +24,4 @@ jobs:
             source ~/.nvm/nvm.sh
             npm i
             npx astro build
+            rsync -av --delete dist/* ${{ secrets.PROJECT_PATH }}
