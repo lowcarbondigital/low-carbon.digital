@@ -20,3 +20,5 @@ jobs:
           script: |
             cd ${{ secrets.REPO_PATH }}
             git pull origin main
+            npm i
+            npx astro build
