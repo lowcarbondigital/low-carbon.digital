@@ -10,7 +10,7 @@ const today = new Date();
 	<p><small>&copy; {today.getFullYear()} <strong>low-carbon</strong>.digital.</small></p>
 
 	<script>
-		window.addEventListener("load", (event) => {
+		window.addEventListener("load", () => {
 			const observer = new PerformanceObserver((list) => {
 				list.getEntries().forEach((entry) => {
 					const elem = document.getElementById("load-time");
