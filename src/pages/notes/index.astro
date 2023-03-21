@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const notes = (await getCollection('notes')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const title = 'Notes';
@@ -21,7 +21,7 @@ const description = 'Short posts from low-carbon.digital';
 	<body>
 		<Header />
 		<main>
-			<section>
+			<section class="wrapper">
 				<ul>
 					{
 						notes.map((note) => (
