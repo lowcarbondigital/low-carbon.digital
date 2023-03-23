@@ -5,7 +5,7 @@
     {
       "name": "Base",
       "description": "System fonts for body copy and globally set text.",
-      "value": ["Atkinson Hyperlegible", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": ["Atkinson Hyperlegible", "sans-serif"]
     },
     {
       "name": "Serif",

@@ -1,4 +1,5 @@
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:normal;
   font-weight:400;
@@ -7,6 +8,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:normal;
   font-weight:400;
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:italic;
   font-weight:400;
@@ -23,6 +26,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:italic;
   font-weight:400;
@@ -31,6 +35,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:normal;
   font-weight:700;
@@ -39,6 +44,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:normal;
   font-weight:700;
@@ -47,6 +53,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:italic;
   font-weight:700;
@@ -55,6 +62,7 @@
 }
 
 @font-face {
+  font-display: optional;
   font-family:'Atkinson Hyperlegible';
   font-style:italic;
   font-weight:700;
