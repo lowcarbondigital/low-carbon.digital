@@ -17,11 +17,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          script: |
-            cd ${{ secrets.REPO_PATH }}
-            git pull origin main
-            export NVM_DIR=~/.nvm
-            source ~/.nvm/nvm.sh
-            npm i
-            npx astro build
-            rsync -av --delete dist/* ${{ secrets.PROJECT_PATH }}
+          script: deploy-lcd.sh
