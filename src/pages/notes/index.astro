@@ -21,16 +21,16 @@ const description = 'Short posts from low-carbon.digital';
 	<body>
 		<Header />
 		<main>
-			<section class="wrapper">
+			<section class="wrapper h-feed">
 				<hgroup class="flow">
-					<h1 class="text-step-3">Notes</h1>
+					<h1 class="text-step-3 p-name">Notes</h1>
 					<p>An archive of short-form content, typically syndicated to other platforms.</p>
 				</hgroup>
 				<ul>
 					{
 						notes.map((note) => (
-							<li>
-								<FormattedDate date={note.data.pubDate} />
+							<li class="h-entry">
+								<FormattedDate date={note.data.pubDate} />&nbsp;
 								<a href={`/notes/${note.slug}/`}>{note.data.title}</a>
 							</li>
 						))
