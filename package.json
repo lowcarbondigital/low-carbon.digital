@@ -10,10 +10,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/rss": "^2.3.0",
-		"@astrojs/tailwind": "^5.0.0",
+		"@astrojs/rss": "^4.0.1",
+		"@astrojs/tailwind": "^5.0.4",
 		"@tgwf/co2": "^0.12.2",
-		"astro": "^3.4.4",
+		"astro": "^4.0.7",
 		"postcss-import": "^15.1.0",
 		"postcss-import-ext-glob": "^2.1.1",
 		"puppeteer": "^19.7.4",
